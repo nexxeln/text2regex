@@ -1,15 +1,13 @@
 # text2regex
 
-To install dependencies:
+generate regular expressions validated against a thorough test suite
 
-```bash
-bun install
+## usage
+
+```sh
+text2regex "match three consecutive odd digits"
 ```
 
-To run:
+## working
 
-```bash
-bun run index.ts
-```
-
-This project was created using `bun init` in bun v1.1.18. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
+llm generates tests, writes regex, iterates based on test feedback until it passes
