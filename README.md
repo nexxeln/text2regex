@@ -2,6 +2,10 @@
 
 generate regular expressions validated against a thorough test suite
 
+
+https://github.com/nexxeln/text2regex/assets/95541290/d7cb782d-5f72-4641-a63c-93ef30ab451d
+
+
 ## usage
 
 ```sh
