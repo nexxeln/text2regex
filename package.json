@@ -1,0 +1,17 @@
+{
+  "name": "text2regex",
+  "module": "index.ts",
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@ai-sdk/openai": "^0.0.36",
+    "ai": "^3.2.19",
+    "execa": "^9.3.0",
+    "zod": "^3.23.8"
+  }
+}
