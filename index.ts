@@ -1,8 +1,16 @@
 import fs from "node:fs";
 import { z } from "zod";
 import { generateText, tool } from "ai";
-import { openai } from "@ai-sdk/openai";
+import { createOpenAI } from "@ai-sdk/openai";
 import { $ } from "bun";
+
+if (!process.env.OPENAI_API_KEY) {
+  throw new Error("OPENAI_API_KEY is required");
+}
+
+const openai = createOpenAI({
+  apiKey: process.env.OPENAI_API_KEY,
+});
 
 const generateTestCases = async (prompt: string): Promise<string> => {
   const result = await generateText({
